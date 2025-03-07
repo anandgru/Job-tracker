@@ -1,0 +1,377 @@
+/* General Styling */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: rgba(255, 255, 255, 0.5);
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 550px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .buy-premium-button {
+      position: fixed;
+      right: 20px;
+      top: 20px;
+      background-color: #ffc800;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+  }
+  
+  .buy-premium-button:hover {
+      background-color: #efe396f1;
+  }
+  
+  /* Header Styling */
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2575fc;
+    font-size: 1.5rem;
+  }
+  
+  /* Form Styling */
+  form {
+    display: grid;
+    gap: 15px;
+  }
+  
+  form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  form input:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  /* Button Styling */
+  form button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #1b5bb5;
+  }
+  
+  /* Footer Styling */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 15px;
+    color: #bbb;
+  }
+  #premium-status {
+      font-size: 18px;
+      font-weight: bold;
+      color: #ead147;
+  }
+  
+  #leaderboard-container {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }
+  
+  #leaderboard-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+  }
+  
+  #leaderboard-table th,
+  #leaderboard-table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  
+  #leaderboard-table th {
+      background-color: #4caf50;
+      color: white;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px 20px;
+    }
+  
+    form button {
+      font-size: 14px;
+    }
+  }
+  
+  /* Expense Form Container */
+  #expenseForm {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Form Inputs and Dropdowns */
+  #expenseForm input[type="text"],
+  #expenseForm input[type="number"],
+  #expenseForm select,
+  #expenseForm button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box;
+  }
+  
+  #expenseForm input:focus,
+  #expenseForm select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  #expenseForm select {
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Submit Button */
+  #expenseForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  #expenseForm button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form Header */
+  #expenseForm h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 600px) {
+    #expenseForm {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    #expenseForm h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4caf50;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Empty Row */
+  td[colspan="5"] {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+  }
+  
+  /* Mobile Table Adjustments */
+  @media (max-width: 768px) {
+    table {
+      font-size: 14px;
+    }
+  
+    .delete-button {
+      padding: 4px 8px;
+      font-size: 12px;
+    }
+  }
+  /* Basic Button Styles (Apply to all buttons) */
+  button,
+  input[type="submit"], /* Include submit buttons */
+  input[type="reset"] { /* Include reset buttons */
+    display: inline-block;
+    padding: 12px 24px; /* Comfortable padding */
+    font-size: 16px;
+    font-weight: 500; /* Slightly bolder text */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    user-select: none; /* Prevent text selection on click */
+    -webkit-appearance: none; /* Reset default button styles for WebKit browsers */
+    -moz-appearance: none; /* Reset default button styles for Firefox */
+    appearance: none;
+  }
+  
+  /* Primary Button Style (Use a class like .primary-button) */
+  .primary-button {
+    background-color: #007bff; /* Example primary color */
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .primary-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Subtle lift on hover */
+  }
+  
+  .primary-button:active {
+    background-color: #004085;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(0); /* Reset transform on click */
+  }
+  
+  /* Secondary Button Style (Use a class like .secondary-button) */
+  .secondary-button {
+    background-color: transparent;
+    color: #555;
+    border: 2px solid #ddd;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f8f9fa;
+    border-color: #ccc;
+  }
+  .secondary-button:active {
+      background-color: #eee;
+  }
+  
+  .danger-button {
+    background-color: #dc3545; 
+    color: #fff;
+  }
+  
+  .danger-button:hover {
+    background-color: #bd2130;
+  }
+  
+  .danger-button:active {
+      background-color: #a71d2a;
+  }
+  
+  /* Disabled Button Style */
+  button:disabled,
+  input[type="submit"]:disabled,
+  input[type="reset"]:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
+  .btn-small {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  /* Large Button Modifier (Use a class like .btn-large) */
+  .btn-large {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+  
+  /* Full Width Button Modifier (Use a class like .btn-block) */
+  .btn-block {
+      display: block;
+      width: 100%;
+  }
+  
