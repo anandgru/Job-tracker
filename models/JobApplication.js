@@ -7,6 +7,11 @@ module.exports = (sequelize) => {
 
   JobApplication.init(
     {
+      id: {
+        type: DataTypes.UUID,
+        defaultValue: DataTypes.UUIDV4,
+        primaryKey: true
+      },
       jobTitle: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -18,6 +23,10 @@ module.exports = (sequelize) => {
       status: {
         type: DataTypes.ENUM("applied", "interview", "offer", "rejected"),
         allowNull: false,
+      },
+      salary: {
+        type: DataTypes.STRING,
+        allowNull: true
       },
       applicationDate: {
         type: DataTypes.DATE,

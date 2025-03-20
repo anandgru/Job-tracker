@@ -37,6 +37,13 @@ app.use("/applications", require("./routes/applicationRoutes"));
 
 app.use("/applications", jobApplicationRoutes);
 
+app.get('/dashboard', (req, res) => {
+  res.sendFile(path.join(__dirname, 'view', 'dashboard.html')); // Adjust the path to your dashboard.html
+});
+app.get('/profile', (req, res) => {
+  res.sendFile(path.join(__dirname, 'view', 'profile.html')); // Adjust the path to your profile.html
+});
+
 sequelize.sync().then(() => {
   console.log("Database connected!");
   app.listen(3000, () => console.log("Server running on port 3000"));
